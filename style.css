@@ -297,9 +297,6 @@ footer .copyright{
     margin-left: 0; /* Menghilangkan margin kiri pada konten */
   }
 
-  .Landing-page::after {
-    background: none; /* Menghapus latar belakang gradasi pada landing page */
-  }
 
   img {
     padding-top: 1280px; /* Menyesuaikan jarak gambar pada ponsel */
