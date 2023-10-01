@@ -302,7 +302,8 @@ footer .copyright{
   }
 
   img {
-    padding-top: 5rem; /* Menyesuaikan jarak gambar pada ponsel */
+    padding-top: 80rem; /* Menyesuaikan jarak gambar pada ponsel */
+    size: 30%;
   }
 
   .fact-item p {
