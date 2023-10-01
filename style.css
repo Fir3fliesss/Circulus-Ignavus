@@ -2,7 +2,9 @@
   --bg: #010101;
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,7 +16,7 @@
 body {
   font-family: "Montserrat";
   background-color: var(--bg);
-  color: #fff; 
+  color: #fff;
   /* min-height: 2000px; */
 }
 
@@ -41,7 +43,7 @@ body {
   text-shadow: 2px 2px 5px white;
 }
 
-.navbar img{
+.navbar img {
   width: 3%;
   height: auto;
   padding: 0;
@@ -114,35 +116,41 @@ body {
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
-img{
+img {
   size: 100%;
-  float: right;
+  position: relative;
+  /* float: right; */
   padding-top: 30rem;
 }
 
 /* About Start */
 /* Coding Satria Start */
 
-.about{
+.about {
   background-color: #6a482a;
   padding: 3rem 7% 1.5rem;
+  background: linear-gradient(
+    0deg,
+    rgba(198, 180, 161, 1) 3%,
+    rgba(106, 72, 42, 1) 30%
+  );
 }
 
-.about h1{
+.about h1 {
   text-align: center;
   font-size: 2.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #fff;
 }
 
-.about .fact{
+.about .fact {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: justify;
 }
 
-.fact-item{
+.fact-item {
   flex: 1;
   max-width: 20%;
   text-align: justify;
@@ -151,7 +159,7 @@ img{
   align-items: center;
 }
 
-.fact-item img{
+.fact-item img {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -159,7 +167,7 @@ img{
   padding-top: 10rem;
 }
 
-.fact-item p{
+.fact-item p {
   margin-bottom: 8rem;
 }
 
@@ -168,20 +176,20 @@ img{
 
 /* Contacts Start */
 /* Coding Vellinn Start */
-  
-.contacts{
-  background-color: #C6B4A1;
+
+.contacts {
+  background-color: #c6b4a1;
   padding: 3rem 7% 1.5rem;
 }
 
-.contacts h1{
+.contacts h1 {
   text-align: center;
   font-size: 2.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #fff;
 }
 
-.contacts p{
+.contacts p {
   justify-content: center;
   text-align: justify;
   font-size: 1.5rem;
@@ -189,14 +197,14 @@ img{
   margin-top: 5rem;
 }
 
-.contacts .circulus{
+.contacts .circulus {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: justify;
 }
 
-.ignavus{
+.ignavus {
   flex: 1;
   max-width: 20%;
   text-align: justify;
@@ -205,7 +213,7 @@ img{
   align-items: center;
 }
 
-.ignavus img{
+.ignavus img {
   width: 70%;
   max-width: 100%;
   height: auto;
@@ -213,7 +221,7 @@ img{
   padding-top: 10rem;
 }
 
-.ignavus h3{
+.ignavus h3 {
   font-size: 2rem;
   color: #000;
   margin-bottom: 7rem;
@@ -223,39 +231,38 @@ img{
 /* Contacts End */
 
 /* Footer Start */
-footer{
-    background-color: #6a482a;
-    text-align: center;
-    padding: 1rem 0;
-    padding-bottom: 2rem;
+footer {
+  background-color: #6a482a;
+  text-align: center;
+  padding: 1rem 0;
+  padding-bottom: 2rem;
 }
 
-footer .sosmed{
-    padding: 1rem 0;
+footer .sosmed {
+  padding: 1rem 0;
 }
 
-footer .sosmed a{
-    color: #fff;
-    margin: 1rem;
+footer .sosmed a {
+  color: #fff;
+  margin: 1rem;
 }
 
 footer .sosmed a:hover,
-footer .link a:hover{
-    color: #010101;
+footer .link a:hover {
+  color: #010101;
 }
 
-
-footer .link{
-    margin-bottom: 1.4rem;
+footer .link {
+  margin-bottom: 1.4rem;
 }
 
-footer .link a{
-    color: #fff;
-    padding: 0.7rem 1rem;
+footer .link a {
+  color: #fff;
+  padding: 0.7rem 1rem;
 }
 
-footer .copyright{
-    font-size: 0.8rem;
+footer .copyright {
+  font-size: 0.8rem;
 }
 /* Footer End */
 
@@ -298,7 +305,7 @@ footer .copyright{
   }
 
   img {
-    padding-top: 1280px; /* Menyesuaikan jarak gambar pada ponsel */
+    padding-top: 80rem; /* Menyesuaikan jarak gambar pada ponsel */
     size: 30%;
   }
 
