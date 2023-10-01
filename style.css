@@ -78,6 +78,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
+  justify-content: flex-end;
 }
 
 .Landing-page::after {
@@ -259,15 +260,52 @@ footer .copyright{
 /* Footer End */
 
 /* Media Queries */
-/* Laptop */
+/* Media Query untuk Layar Laptop (maksimum 1366px) */
 @media (max-width: 1366px) {
-  html {
-    font-size: 75%;
+  .navbar {
+    margin-left: 5%; /* Mengurangi margin pada navbar */
+    margin-right: 5%;
+  }
+
+  .navbar-link a {
+    margin: 0 5rem; /* Mengurangi margin antara tautan navbar */
+  }
+
+  .content {
+    margin-left: 5%; /* Mengurangi margin pada konten */
   }
 }
-/* Hp */
+
+/* Media Query untuk Layar Ponsel (maksimum 450px) */
 @media (max-width: 450px) {
-  html {
-    font-size: 50%;
+  .navbar {
+    padding: 1rem 0; /* Mengurangi padding pada navbar */
+    margin-left: 0; /* Menghilangkan margin kiri pada navbar */
+    margin-right: 0; /* Menghilangkan margin kanan pada navbar */
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem; /* Mengurangi ukuran font logo pada navbar */
+  }
+
+  .navbar-link a {
+    margin: 0 2rem; /* Mengurangi margin antara tautan navbar */
+    font-size: 1rem; /* Mengurangi ukuran font tautan navbar */
+  }
+
+  .content {
+    margin-left: 0; /* Menghilangkan margin kiri pada konten */
+  }
+
+  .Landing-page::after {
+    background: none; /* Menghapus latar belakang gradasi pada landing page */
+  }
+
+  img {
+    padding-top: 5rem; /* Menyesuaikan jarak gambar pada ponsel */
+  }
+
+  .fact-item p {
+    margin-bottom: 4rem; /* Mengurangi margin pada paragraf fakta */
   }
 }
