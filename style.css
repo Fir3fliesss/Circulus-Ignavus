@@ -267,7 +267,7 @@
   
   /* Media Queries */
   /* Media Query Laptop (maksimum 1366px) */
-  @media (max-width: 1366px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     .navbar {
       margin-left: 5%; 
       margin-right: 5%;
