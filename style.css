@@ -46,7 +46,7 @@
   .navbar img {
     width: 3%;
     height: auto;
-    padding: 0;
+    padding-top: 0;
   }
   
   .navbar .navbar-link a {
@@ -119,6 +119,7 @@
   img {
     size: 100%;
     position: relative;
+    padding-top: 30rem;
   }
   
   /* About Start */
