@@ -41,6 +41,8 @@
     font-size: 2rem;
     font-weight: 700;
     text-shadow: 2px 2px 5px white;
+    padding-left: 5rem;
+    position: absolute;
   }
   
   .navbar img {
