@@ -14,21 +14,18 @@
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   background-color: var(--bg);
   color: #fff;
-  /* min-height: 2000px; */
 }
 
-/* Navbar Start*/
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 1%;
+  padding: 1.5rem 7%;
   border-bottom: 1px solid #fff;
-  margin-left: 7%;
-  margin-right: 7%;
   position: fixed;
   top: 0;
   left: 0;
@@ -46,14 +43,12 @@ body {
 .navbar img {
   width: 3%;
   height: auto;
-  padding: 0;
 }
 
 .navbar .navbar-link a {
   color: #fff;
-  display: inline;
   font-size: 1.2rem;
-  margin: 0 10rem;
+  margin: 0 2rem;
 }
 
 .navbar .navbar-link a:hover {
@@ -65,12 +60,11 @@ body {
   margin: 0 0.5rem;
 }
 
-.navbar .navbar-search :hover {
+.navbar .navbar-search:hover {
   color: #6a482a;
 }
-/* Navbar End */
 
-/* Landing-Page */
+/* Landing Page */
 .Landing-page {
   min-height: 100vh;
   display: flex;
@@ -117,15 +111,12 @@ body {
 }
 
 img {
-  size: 100%;
-  position: relative;
-  /* float: right; */
+  max-width: 100%;
+  height: auto;
   padding-top: 30rem;
 }
 
-/* About Start */
-/* Coding Satria Start */
-
+/* About */
 .about {
   background-color: #6a482a;
   padding: 3rem 7% 1.5rem;
@@ -160,7 +151,6 @@ img {
 }
 
 .fact-item img {
-  width: 100%;
   max-width: 100%;
   height: auto;
   margin-bottom: 2rem;
@@ -171,12 +161,7 @@ img {
   margin-bottom: 8rem;
 }
 
-/* Coding Satria End */
-/* About End */
-
-/* Contacts Start */
-/* Coding Vellinn Start */
-
+/* Contacts */
 .contacts {
   background-color: #c6b4a1;
   padding: 3rem 7% 1.5rem;
@@ -214,7 +199,6 @@ img {
 }
 
 .ignavus img {
-  width: 70%;
   max-width: 100%;
   height: auto;
   margin-bottom: 2rem;
@@ -227,10 +211,7 @@ img {
   margin-bottom: 7rem;
 }
 
-/* Coding Vellinn End */
-/* Contacts End */
-
-/* Footer Start */
+/* Footer */
 footer {
   background-color: #6a482a;
   text-align: center;
@@ -264,52 +245,51 @@ footer .link a {
 footer .copyright {
   font-size: 0.8rem;
 }
-/* Footer End */
 
 /* Media Queries */
-/* Media Query untuk Layar Laptop (maksimum 1366px) */
+/* Media Query for Laptops (maximum 1366px) */
 @media (max-width: 1366px) {
   .navbar {
-    margin-left: 5%; /* Mengurangi margin pada navbar */
+    margin-left: 5%;
     margin-right: 5%;
   }
 
   .navbar-link a {
-    margin: 0 5rem; /* Mengurangi margin antara tautan navbar */
+    margin: 0 2rem;
   }
 
   .content {
-    margin-left: 5%; /* Mengurangi margin pada konten */
+    margin-left: 5%;
   }
 }
 
-/* Media Query untuk Layar Ponsel (maksimum 450px) */
+/* Media Query for Mobile Phones (maximum 450px) */
 @media (max-width: 450px) {
   .navbar {
-    padding: 1rem 0; /* Mengurangi padding pada navbar */
-    margin-left: 0; /* Menghilangkan margin kiri pada navbar */
-    margin-right: 0; /* Menghilangkan margin kanan pada navbar */
+    padding: 1rem 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .navbar-logo {
-    font-size: 1.5rem; /* Mengurangi ukuran font logo pada navbar */
+    font-size: 1.5rem;
   }
 
   .navbar-link a {
-    margin: 0 2rem; /* Mengurangi margin antara tautan navbar */
-    font-size: 1rem; /* Mengurangi ukuran font tautan navbar */
+    margin: 0 1rem;
+    font-size: 1rem;
   }
 
   .content {
-    margin-left: 0; /* Menghilangkan margin kiri pada konten */
+    margin-left: 0;
   }
 
   img {
-    padding-top: 80rem; /* Menyesuaikan jarak gambar pada ponsel */
+    padding-top: 80rem;
     size: 30%;
   }
 
   .fact-item p {
-    margin-bottom: 4rem; /* Mengurangi margin pada paragraf fakta */
+    margin-bottom: 4rem;
   }
 }
