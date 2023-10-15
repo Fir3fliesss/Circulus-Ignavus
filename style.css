@@ -1,316 +1,355 @@
 :root {
-    --bg: #010101;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-  }
-  
-  body {
-    font-family: "Montserrat";
-    background-color: var(--bg);
-    color: #fff;
-    /* min-height: 2000px; */
-  }
-  
-  /* Navbar Start*/
+  --bg: #010101;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat";
+  background-color: var(--bg);
+  color: #fff;
+  /* min-height: 2000px; */
+}
+
+/* Navbar Start*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1%;
+  border-bottom: 1px solid #fff;
+  margin-left: 7%;
+  margin-right: 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  color: #6a482a;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px white;
+  padding-left: 5rem;
+  position: absolute;
+}
+
+.navbar img {
+  width: 3%;
+  height: auto;
+  padding-top: 0;
+}
+
+.navbar .navbar-link a {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0 6rem;
+}
+
+.navbar .navbar-link a:hover {
+  color: #6a482a;
+}
+
+.navbar .navbar-search {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-search :hover {
+  color: #6a482a;
+}
+/* Navbar End */
+
+/* Landing-Page */
+.Landing-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.Landing-page::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(106, 72, 42, 1) 3%,
+    rgba(255, 255, 255, 0) 25%
+  );
+}
+
+.Landing-page .content {
+  text-align: justify;
+  margin-left: 7%;
+}
+
+.Landing-page .content h1 {
+  font-size: 5em;
+  color: black;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.Landing-page .content p {
+  color: black;
+  text-align: justify;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+img {
+  size: 100%;
+  position: relative;
+  padding-top: 30rem;
+}
+
+/* About Start */
+/* Coding Satria Start */
+
+.about {
+  background-color: #6a482a;
+  padding: 3rem 7% 1.5rem;
+  background: linear-gradient(
+    0deg,
+    rgba(198, 180, 161, 1) 3%,
+    rgba(106, 72, 42, 1) 30%
+  );
+}
+
+.about h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #fff;
+}
+
+.about .fact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
+.fact-item {
+  flex: 1;
+  max-width: 20%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fact-item img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  padding-top: 10rem;
+}
+
+.fact-item img:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+.popup-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+
+.popup-img span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.popup-img img {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  object-fit: cover;
+}
+
+.fact-item p {
+  margin-bottom: 8rem;
+}
+
+/* Coding Satria End */
+/* About End */
+
+/* Contacts Start */
+/* Coding Vellinn Start */
+
+.contacts {
+  background-color: #c6b4a1;
+  padding: 3rem 7% 1.5rem;
+}
+
+.contacts h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #fff;
+}
+
+.contacts p {
+  justify-content: center;
+  text-align: justify;
+  font-size: 1.5rem;
+  color: #000;
+  margin-top: 5rem;
+}
+
+.contacts .circulus {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
+.ignavus {
+  flex: 1;
+  max-width: 20%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ignavus img {
+  width: 70%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  padding-top: 10rem;
+}
+
+.ignavus img:hover{
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+.ignavus h3 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 7rem;
+}
+
+/* Coding Vellinn End */
+/* Contacts End */
+
+/* Footer Start */
+footer {
+  background-color: #6a482a;
+  text-align: center;
+  padding: 1rem 0;
+  padding-bottom: 2rem;
+}
+
+footer .sosmed {
+  padding: 1rem 0;
+}
+
+footer .sosmed a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .sosmed a:hover,
+footer .link a:hover {
+  color: #010101;
+}
+
+footer .link {
+  margin-bottom: 1.4rem;
+}
+
+footer .link a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .copyright {
+  font-size: 0.8rem;
+}
+/* Footer End */
+
+/* Media Queries */
+/* Media Query Laptop (minimun 768px) dan (maksimum 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 1%;
-    border-bottom: 1px solid #fff;
-    margin-left: 7%;
-    margin-right: 7%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
+    margin-left: 5%;
+    margin-right: 5%;
   }
-  
-  .navbar .navbar-logo {
-    color: #6a482a;
-    font-size: 2rem;
-    font-weight: 700;
-    text-shadow: 2px 2px 5px white;
-    padding-left: 5rem;
-    position: absolute;
+
+  .navbar-link a {
+    margin: 0 5rem;
   }
-  
-  .navbar img {
-    width: 3%;
-    height: auto;
-    padding-top: 0;
+
+  .content {
+    margin-left: 5%;
   }
-  
-  .navbar .navbar-link a {
-    color: #fff;
-    display: inline;
-    font-size: 1.2rem;
-    margin: 0 6rem;
+}
+
+/* Media Query Hp (maksimum 450px) */
+@media (max-width: 450px) {
+  .navbar {
+    padding: 1rem 0;
+    margin-left: 0;
+    margin-right: 0;
   }
-  
-  .navbar .navbar-link a:hover {
-    color: #6a482a;
-  }
-  
-  .navbar .navbar-search {
-    color: #fff;
-    margin: 0 0.5rem;
-  }
-  
-  .navbar .navbar-search :hover {
-    color: #6a482a;
-  }
-  /* Navbar End */
-  
-  /* Landing-Page */
-  .Landing-page {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background-image: url("img/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    justify-content: flex-end;
-  }
-  
-  .Landing-page::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      0deg,
-      rgba(106, 72, 42, 1) 3%,
-      rgba(255, 255, 255, 0) 25%
-    );
-  }
-  
-  .Landing-page .content {
-    text-align: justify;
-    margin-left: 7%;
-  }
-  
-  .Landing-page .content h1 {
-    font-size: 5em;
-    color: black;
-    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-  }
-  
-  .Landing-page .content p {
-    color: black;
-    text-align: justify;
-    font-size: 1.8rem;
-    margin-top: 1rem;
-    font-weight: 300;
-    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-  }
-  
-  img {
-    size: 100%;
-    position: relative;
-    padding-top: 30rem;
-  }
-  
-  /* About Start */
-  /* Coding Satria Start */
-  
-  .about {
-    background-color: #6a482a;
-    padding: 3rem 7% 1.5rem;
-    background: linear-gradient(
-      0deg,
-      rgba(198, 180, 161, 1) 3%,
-      rgba(106, 72, 42, 1) 30%
-    );
-  }
-  
-  .about h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #fff;
-  }
-  
-  .about .fact {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: justify;
-  }
-  
-  .fact-item {
-    flex: 1;
-    max-width: 20%;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .fact-item img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 2rem;
-    padding-top: 10rem;
-  }
-  
-  .fact-item p {
-    margin-bottom: 8rem;
-  }
-  
-  /* Coding Satria End */
-  /* About End */
-  
-  /* Contacts Start */
-  /* Coding Vellinn Start */
-  
-  .contacts {
-    background-color: #c6b4a1;
-    padding: 3rem 7% 1.5rem;
-  }
-  
-  .contacts h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #fff;
-  }
-  
-  .contacts p {
-    justify-content: center;
-    text-align: justify;
+
+  .navbar-logo {
     font-size: 1.5rem;
-    color: #000;
-    margin-top: 5rem;
   }
-  
-  .contacts .circulus {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: justify;
+
+  .navbar-link a {
+    margin: 0 2rem;
+    font-size: 1rem;
   }
-  
-  .ignavus {
-    flex: 1;
-    max-width: 20%;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+  .content {
+    margin-left: 0;
   }
-  
-  .ignavus img {
-    width: 70%;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 2rem;
-    padding-top: 10rem;
+
+  img {
+    padding-top: 80rem;
+    size: 30%;
   }
-  
-  .ignavus h3 {
-    font-size: 2rem;
-    color: #000;
-    margin-bottom: 7rem;
+
+  .fact-item p {
+    margin-bottom: 4rem;
   }
-  
-  /* Coding Vellinn End */
-  /* Contacts End */
-  
-  /* Footer Start */
-  footer {
-    background-color: #6a482a;
-    text-align: center;
-    padding: 1rem 0;
-    padding-bottom: 2rem;
-  }
-  
-  footer .sosmed {
-    padding: 1rem 0;
-  }
-  
-  footer .sosmed a {
-    color: #fff;
-    margin: 1rem;
-  }
-  
-  footer .sosmed a:hover,
-  footer .link a:hover {
-    color: #010101;
-  }
-  
-  footer .link {
-    margin-bottom: 1.4rem;
-  }
-  
-  footer .link a {
-    color: #fff;
-    padding: 0.7rem 1rem;
-  }
-  
-  footer .copyright {
-    font-size: 0.8rem;
-  }
-  /* Footer End */
-  
-  /* Media Queries */
-  /* Media Query Laptop (maksimum 1366px) */
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .navbar {
-      margin-left: 5%; 
-      margin-right: 5%;
-    }
-  
-    .navbar-link a {
-      margin: 0 5rem; 
-    }
-  
-    .content {
-      margin-left: 5%; 
-    }
-  }
-  
-  /* Media Query Hp (maksimum 450px) */
-  @media (max-width: 450px) {
-    .navbar {
-      padding: 1rem 0; 
-      margin-left: 0; 
-      margin-right: 0; 
-    }
-  
-    .navbar-logo {
-      font-size: 1.5rem; 
-    }
-  
-    .navbar-link a {
-      margin: 0 2rem;
-      font-size: 1rem; 
-    }
-  
-    .content {
-      margin-left: 0;
-    }
-  
-    img {
-      padding-top: 80rem; 
-      size: 30%;
-    }
-  
-    .fact-item p {
-      margin-bottom: 4rem;
-    }
-  }
+}
