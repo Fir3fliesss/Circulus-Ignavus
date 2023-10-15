@@ -16,6 +16,9 @@
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Style -->
     <link rel="icon" href="img/logo.png" type="png" />
     <link rel="stylesheet" href="style.css" />
@@ -39,8 +42,8 @@
     <!-- Landing Page Start -->
     <section class="Landing-page" id="home">
       <main class="content">
-        <h1>Capybara</h1>
-        <p>
+        <h1 data-aos="zoom-in" data-aos-duration="1000">Capybara</h1>
+        <p data-aos="fade-right" data-aos-duration="2000">
           <strong>Kapibara atau kapibara besar</strong>
           <em>(Hydrochoerus hydrochaeris)</em> merupakan jenis hewan pengerat
           terbesar yang masih ada di dunia yang merupakan anggota genus
@@ -48,7 +51,7 @@
           di Amerika Selatan.
         </p>
       </main>
-      <img src="img/fotocapybara.png" alt="fotocapybara" />
+      <img data-aos="fade-left" data-aos-duration="2000" src="img/fotocapybara.png" alt="fotocapybara" />
     </section>
     <!--  Landing Page End-->
 
@@ -56,14 +59,10 @@
     <section id="about" class="about">
       <!-- Coding Satria Start -->
       <main class="isi">
-        <h1>Fakta unik capybara</h1>
-        <div class="fact">
+        <h1 data-aos="zoom-in-up" data-aos-delay="100">Fakta unik capybara</h1>
+        <div data-aos="fade-up" data-aos-offset="500" class="fact">
           <div class="fact-item">
-            <img
-              class="f1"
-              src="img/perenang-handal.png"
-              alt="perenang-handal"
-            />
+            <img src="img/perenang-handal.png" alt="perenang-handal" title="perenang-handal"/>
             <p class="ph">
               Kapibara memiliki sifat semi-akuatik dengan kaki yang sedikit
               berselaput dan ekor yang sangat pendek. Kondisi tubuh tersebut
@@ -73,11 +72,7 @@
             </p>
           </div>
           <div class="fact-item">
-            <img
-              class="f2"
-              src="img/makan-kotoran-sendiri.png"
-              alt="Makan-kotoran-sendiri"
-            />
+            <img src="img/makan-kotoran-sendiri.png" alt="Makan-kotoran-sendiri" title="makan-kotoran-sendiri"/>
             <p class="mks">
               Kapibara termasuk herbivora, biasanya makan rumput dan tanaman
               air. Namun, kapibara juga makan kotoran mereka sendiri. Kotoran
@@ -88,7 +83,7 @@
             </p>
           </div>
           <div class="fact-item">
-            <img class="f3" src="img/penciuman-baik.png" alt="Penciuman-baik" />
+            <img src="img/penciuman-baik.png" alt="Penciuman-baik" title="penciuman-baik"/>
             <p class="pb">
               Kapibara memiliki dua tipe penciuman, yaitu morillo dan kelenjar
               anal yang membuat penciumannya baik. Kapibara jantan dapat mencium
@@ -97,6 +92,10 @@
               kembali ke rumahnya.
             </p>
           </div>
+        </div>
+        <div class="popup-img">
+          <span>&times;</span>
+          <img src="img/perenang-handal.png" alt="">
         </div>
       </main>
       <!-- Coding Satria End -->
@@ -107,8 +106,8 @@
     <section id="contacts" class="contacts">
       <!-- Coding Vellinn Start -->
       <main class="developer">
-        <h1>Circulus Ignavus</h1>
-        <p>
+        <h1 data-aos="zoom-in-up" data-aos-delay="100">Circulus Ignavus</h1>
+        <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           Projek akhir Devaccto website division dari circulus ignavus yang
           berarti kelompok malas. Circulus Ignavus terdiri atas 3 manusia aseli
           bumi (sebenarnya 1 orang dari planet namex), Website ini berisikan
@@ -116,7 +115,7 @@
           nama kelompok ini (Orang nya tidak malas betulan aseli). Berikut wujud
           aseli dari penghuni circulus ignavus.
         </p>
-        <div class="circulus">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center" duration="1000 " class="circulus">
           <div class="ignavus">
             <img src="img/gheraldy.png" alt="foto gheral" />
             <h3>Gheraldy</h3>
@@ -155,9 +154,10 @@
     </footer>
     <!-- Footer End -->
 
-    <!-- Feather Icons -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      feather.replace();
+      AOS.init();
     </script>
+    <script src="index.js"></script>
   </body>
 </html>
